@@ -4,6 +4,25 @@ declare(strict_types=1);
 
 final class AlternatifService
 {
+    public function getAll(): array
+    {
+        $query = "
+        SELECT
+            id_alternatif,
+            kode_alternatif,
+            nama_alternatif
+        FROM alternatif
+        ORDER BY id_alternatif ASC
+    ";
+
+        $statement = $this->pdo->query(
+            $query
+        );
+
+        return $statement->fetchAll(
+            PDO::FETCH_ASSOC
+        );
+    }
     public function __construct(
         private readonly PDO $pdo
     ) {}
