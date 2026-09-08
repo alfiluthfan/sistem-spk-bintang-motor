@@ -840,6 +840,14 @@ video {
   min-width: 950px;
 }
 
+.min-w-40 {
+  min-width: 10rem;
+}
+
+.min-w-\[850px\] {
+  min-width: 850px;
+}
+
 .max-w-3xl {
   max-width: 48rem;
 }
@@ -1319,6 +1327,14 @@ video {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.leading-5 {
+  line-height: 1.25rem;
+}
+
+.leading-6 {
+  line-height: 1.5rem;
 }
 
 .tracking-tight {
