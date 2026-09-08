@@ -1,0 +1,18 @@
+# Node & Dependencies
+node_modules/
+npm-debug.log
+
+# Mac/Windows OS files
+.DS_Store
+Thumbs.db
+
+# VS Code settings
+.vscode/
+
+# Environment Variables / Sensitive Data (Jika Anda pakai)
+.env
+
+# Catatan: 
+# Jika file config/Database.php Anda berisi password asli database hosting, 
+# sebaiknya file tersebut jangan di-push. Anda bisa menghapus tanda pagar di bawah ini:
+config/Database.php
